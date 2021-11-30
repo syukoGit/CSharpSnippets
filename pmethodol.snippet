@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>pmethodol</Title>
+			<Shortcut>pmethodol</Shortcut>
+			<Description>Code snippet for a public one line method.</Description>
+			<Author>syuko</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Type of the return value</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>methodName</ID>
+					<ToolTip>Name of the method</ToolTip>
+					<Default>MyMethod</Default>
+				</Literal>
+				<Literal>
+					<ID>code</ID>
+					<ToolTip>One line code of the method</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[public $type$ $methodName$() => $code$;$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

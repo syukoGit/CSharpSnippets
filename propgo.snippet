@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>mth</Title>
+			<Shortcut>propgo</Shortcut>
+			<Description>Code snippet for a property implemented automatically with only 'get' accessor.</Description>
+			<Author>syuko</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>type</ID>
+					<ToolTip>Type of the property</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>propertyName</ID>
+					<ToolTip>Name of the property</ToolTip>
+					<Default>MyProperty</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="CSharp">
+				<![CDATA[public $type$ $propertyName$ { get; }$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
